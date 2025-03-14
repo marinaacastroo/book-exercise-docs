@@ -8,7 +8,7 @@ Be sure to implement all the PIOT-GDA-* issues (requirements).
 
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
-What does your implementation do? 
+What does your implementation do? No se ha hecho ninguna implementación
 
 How does your implementation work?
 
