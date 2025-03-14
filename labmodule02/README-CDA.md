@@ -9,8 +9,10 @@ Be sure to implement all the PIOT-CDA-* issues (requirements).
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
 What does your implementation do? 
+In this implementation I added system performance monitoring to collect CPU and memory usage data. The CDA uses a SystemPerformanceManager to handle the data collection tasks. These tasks, SystemCpuUtilTask and SystemMemUtilTask, run periodically to gather the system's CPU and memory usage stats, and then log them using the system logger.
 
 How does your implementation work?
+The CDA implementation works by setting up a task scheduler within the SystemPerformanceManager module. This manager is responsible for periodically triggering the collection of system performance metrics. The SystemCpuUtilTask gathers CPU utilization data, while the SystemMemUtilTask collects memory usage metrics. These tasks are integrated into the SystemPerformanceManager, allowing the system to start and stop data collection dynamically. The tasks execute at predefined intervals, and the collected data is logged in real-time. This approach provides a simple yet efficient mechanism for monitoring the performance of constrained devices. 
 
 ### Code Repository and Branch
 
