@@ -29,8 +29,8 @@ NOTE: The instructor will execute your unit tests. You only need to list each te
 since you need to ensure you haven't introduced regressions.
 
 - DataUtilTest
-- 
-- 
+- All part01 unit tests
+  
 
 ### Integration Tests Executed
 
@@ -40,7 +40,7 @@ your code to ensure it's correct. As for the tests you execute, you only need to
 test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
 - SystemPerformanceManagerTest
-- 
-- 
+- All part01 integration tests
+  
 
 EOF.
