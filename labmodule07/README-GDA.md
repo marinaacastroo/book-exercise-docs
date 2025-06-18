@@ -9,11 +9,11 @@ Be sure to implement all the PIOT-GDA-* issues (requirements) listed.
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
 What does your implementation do? 
-My implementation adds MQTT support to the GDA, enabling it to publish, subscribe to, and receive messages from an MQTT broker. I implemented the MqttClientConnector class to manage the connection and communication using the synchronous MqttClient. I also configured the necessary topic subscriptions to receive data from the CDA and integrated the connector into the DeviceDataManager.
+Mi implementación integra el cliente MQTT en DeviceDataManager, permitiendo que el sistema establezca una conexión con un broker MQTT, se suscriba a los tópicos necesarios y gestione el envío y recepción de mensajes. Esto facilita la coordinación entre dispositivos y el intercambio de datos de forma eficiente.
+
 
 How does your implementation work?
-The MQTT client is initialized with values from the configuration file and started from within the DeviceDataManager. Messages are published and received through methods that validate the topic and QoS level. Connection events, message delivery, and incoming messages are handled using the MqttCallbackExtended interface. To complete the lab, I captured all 14 MQTT 3.1.1 control packets using Wireshark by sending messages with QoS 1 and 2.
-
+Mi implementación funciona de la siguiente manera: durante la inicialización del DeviceDataManager se evalúa la bandera enableMqttClient para decidir si se debe crear una instancia del cliente MQTT (MqttClientConnector); en caso afirmativo, se configura el cliente con los parámetros del broker obtenidos de la configuración (host, puerto, keep-alive, etc.) y, al arrancar el manager mediante startManager(), se invoca el método connectClient() para establecer conexión y suscribirse a los tópicos necesarios para la comunicación. Durante el funcionamiento, el cliente se encarga de gestionar el envío y la recepción de mensajes, invocando los callbacks correspondientes para confirmar la entrega o procesar la llegada de mensajes, y al detener el sistema con stopManager() se realizan las desuscripciones y se cierra la conexión a través del método disconnectClient().
 
 ### Code Repository and Branch
 
@@ -28,10 +28,9 @@ NOTE: The instructor will execute your unit tests. You only need to list each te
 (e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
 since you need to ensure you haven't introduced regressions.
 
-- 
-- 
-- 
-
+- All part 01 unit test
+- All part 02 unit test
+  
 ### Integration Tests Executed
 
 NOTE: The instructor will execute most of your integration tests using their own environment, with
@@ -39,8 +38,9 @@ some exceptions (such as your cloud connectivity tests). In such cases, they'll 
 your code to ensure it's correct. As for the tests you execute, you only need to list each
 test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
-- 
-- 
-- 
+- All part01 integration test
+- All part02 integration test
+- MqttClientConnectorTest
+- MqttClientControlPacketTest
 
 EOF.
