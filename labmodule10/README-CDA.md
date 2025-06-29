@@ -40,4 +40,16 @@ test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 - 
 - 
 
+
+Testing POST - NON
+
+POST message - useCON = False [100]: 950.12 ms. Payload Len: 246
+
+Testing POST - CON
+
+POST message - useCON = True [100]: 1020.45 ms. Payload Len: 246
+----------------------------------------------------------------------
+Ran 6 tests in 10.23s
+
+OK (skipped=4)
 EOF.
