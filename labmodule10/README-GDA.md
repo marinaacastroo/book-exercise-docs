@@ -42,63 +42,19 @@ test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 - 
 
 
+2025-06-30 15:56:19,371:DeviceDataManagerIntegrationTest:INFO:Testing DeviceDataManager class...
+2025-06-30 15:56:19,371:ConfigUtil:INFO:Can't load /Users/marinacastro/Documents/IA/2024-2025/2ºCUATRI/PIC/practicasPIC/python-components/config/PiotConfig.props. Trying default: /Users/marinacastro/Documents/IA/2024-2025/2ºCUATRI/PIC/practicasPIC/python-components/config/PiotConfig.props
+2025-06-30 15:56:19,371:ConfigUtil:DEBUG:Config: []
+2025-06-30 15:56:19,372:ConfigUtil:INFO:Created instance of ConfigUtil: <programmingtheiot.common.ConfigUtil.ConfigUtil object at 0x7fec8421c260>
+2025-06-30 15:56:19,372:DeviceDataManager:INFO:Local actuation capabilities enabled
+2025-06-30 15:56:19,372:DeviceDataManager:INFO:Starting DeviceDataManager...
+2025-06-30 15:56:19,372:DeviceDataManager:INFO:Started DeviceDataManager.
+2025-06-30 15:57:19,372:DeviceDataManager:INFO:Stopping DeviceDataManager...
+2025-06-30 15:57:19,373:DeviceDataManager:INFO:Stopped DeviceDataManager.
 
+----------------------------------------------------------------------
+Ran 1 test in 60.002s
 
-[INFO] Scanning for projects...
-[INFO] 
-[INFO] --------------< programmingtheiot.gda:gateway-device-app >--------------
-[INFO] Building Gateway Device App 0.0.1
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ gateway-device-app ---
-[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /mnt/c/Users/Usuario/OneDrive - Universidade de Vigo/Documentos/IA/PIC/java-components/src/main/resources
-[INFO]
-[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ gateway-device-app ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO]
-[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ gateway-device-app ---
-[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /mnt/c/Users/Usuario/OneDrive - Universidade de Vigo/Documentos/IA/PIC/java-components/src/test/resources
-[INFO]
-[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ gateway-device-app ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO]
-[INFO] --- maven-surefire-plugin:3.0.0:test (default-test) @ gateway-device-app ---
-[WARNING] useSystemClassLoader setting has no effect when not forking
-[WARNING] The parameter forkCount should likely not be 0. Forking a JVM for tests improves test accuracy. Ensure to have a <forkCount> >= 1.  
-[INFO] Using auto detected provider org.apache.maven.surefire.junit4.JUnit4Provider
-[INFO] Running programmingtheiot.part03.integration.connection.CoapClientPerformanceTest
-Jun 30, 2025 12:46:14 AM programmingtheiot.part03.integration.connection.CoapClientPerformanceTest testPutRequestCon
-INFO: Testing PUT - CON
-SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Jun 30, 2025 12:46:34 AM programmingtheiot.part03.integration.connection.CoapClientPerformanceTest execTestPut
-INFO: PUT message - useCON = true [10000]: 18891 ms
-Jun 30, 2025 12:46:34 AM programmingtheiot.part03.integration.connection.CoapClientPerformanceTest testPutRequestNon
-INFO: Testing PUT - NON
-Jun 30, 2025 12:46:56 AM programmingtheiot.part03.integration.connection.CoapClientPerformanceTest execTestPut
-INFO: PUT message - useCON = false [10000]: 22122 ms
-Jun 30, 2025 12:46:56 AM programmingtheiot.part03.integration.connection.CoapClientPerformanceTest testPostRequestCon
-INFO: Testing POST - CON
-Jun 30, 2025 12:47:13 AM programmingtheiot.part03.integration.connection.CoapClientPerformanceTest execTestPost
-INFO: POST message - useCON = true [10000]: 16977 ms
-Jun 30, 2025 12:47:13 AM programmingtheiot.part03.integration.connection.CoapClientPerformanceTest testPostRequestNon
-INFO: Testing POST - NON
-Jun 30, 2025 12:47:30 AM programmingtheiot.part03.integration.connection.CoapClientPerformanceTest execTestPost
-INFO: POST message - useCON = false [10000]: 17506 ms
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 76.481 s - in programmingtheiot.part03.integration.connection.CoapClientPerformanceTest
-[INFO]
-[INFO] Results:
-[INFO]
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
-[INFO]
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  01:21 min
-[INFO] Finished at: 2025-06-30T00:47:30+02:00
-[INFO] ------------------------------------------------------------------------
+OK
 
 EOF.
