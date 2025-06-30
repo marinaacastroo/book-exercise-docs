@@ -39,17 +39,18 @@ test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 - 
 - 
 - 
+2025-06-30 15:56:19,371:DeviceDataManagerIntegrationTest:INFO:Testing DeviceDataManager class...
+2025-06-30 15:56:19,371:ConfigUtil:INFO:Can't load /Users/marinacastro/Documents/IA/2024-2025/2ºCUATRI/PIC/practicasPIC/python-components/config/PiotConfig.props. Trying default: /Users/marinacastro/Documents/IA/2024-2025/2ºCUATRI/PIC/practicasPIC/python-components/config/PiotConfig.props
+2025-06-30 15:56:19,371:ConfigUtil:DEBUG:Config: []
+2025-06-30 15:56:19,372:ConfigUtil:INFO:Created instance of ConfigUtil: <programmingtheiot.common.ConfigUtil.ConfigUtil object at 0x7fec8421c260>
+2025-06-30 15:56:19,372:DeviceDataManager:INFO:Local actuation capabilities enabled
+2025-06-30 15:56:19,372:DeviceDataManager:INFO:Starting DeviceDataManager...
+2025-06-30 15:56:19,372:DeviceDataManager:INFO:Started DeviceDataManager.
+2025-06-30 15:57:19,372:DeviceDataManager:INFO:Stopping DeviceDataManager...
+2025-06-30 15:57:19,373:DeviceDataManager:INFO:Stopped DeviceDataManager.
 
-
-Testing POST - NON
-
-POST message - useCON = False [100]: 950.12 ms. Payload Len: 246
-
-Testing POST - CON
-
-POST message - useCON = True [100]: 1020.45 ms. Payload Len: 246
 ----------------------------------------------------------------------
-Ran 6 tests in 10.23s
+Ran 1 test in 60.002s
 
-OK (skipped=4)
+OK
 EOF.
