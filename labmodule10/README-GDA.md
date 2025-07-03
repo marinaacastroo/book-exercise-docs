@@ -9,14 +9,16 @@ Be sure to implement all the PIOT-GDA-* issues (requirements) listed.
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
 What does your implementation do? 
+Mi implementación permite que el gateway se conecte a la nube, envíe datos de sensores y rendimiento, y gestione la suscripción a eventos cloud. Para ello, desarrollé la clase CloudClientConnector, que implementa la interfaz ICloudClient y maneja la lógica de conexión, envío y recepción de datos usando los recursos y estructuras del proyecto
 
 How does your implementation work?
+El funcionamiento se basa en métodos como connectClient, sendEdgeDataToCloud y subscribeToCloudEvents, que gestionan la comunicación con la nube y la integración con el resto del sistema. Se han añadido logs y validaciones para asegurar la robustez y trazabilidad.
 
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch.
 
-URL: 
+URL: https://github.com/marinaacastroo/java-components/tree/labmodule10
 
 
 
@@ -26,9 +28,11 @@ NOTE: The instructor will execute your unit tests. You only need to list each te
 (e.g. ConfigUtilTest, DataUtilTest, etc). Be sure to include all previous tests, too,
 since you need to ensure you haven't introduced regressions.
 
-- 
-- 
-- 
+- MqttClientConnectorTest
+- MqttClientPerformanceTest
+- ConfigUtilTest
+- DataUtilTest
+ 
 
 ### Integration Tests Executed
 
@@ -37,10 +41,12 @@ some exceptions (such as your cloud connectivity tests). In such cases, they'll 
 your code to ensure it's correct. As for the tests you execute, you only need to list each
 test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
-- 
-- 
-- 
+- MqttClientConnectorTest
+- MqttClientPerformanceTest
+- DeviceDataManagerTest
+- SensorSimAdapterManagerTest
 
+### GDA MQTT Client Performance Test Results
 
 2025-06-30 15:56:19,371:DeviceDataManagerIntegrationTest:INFO:Testing DeviceDataManager class...
 2025-06-30 15:56:19,371:ConfigUtil:INFO:Can't load /Users/marinacastro/Documents/IA/2024-2025/2ºCUATRI/PIC/practicasPIC/python-components/config/PiotConfig.props. Trying default: /Users/marinacastro/Documents/IA/2024-2025/2ºCUATRI/PIC/practicasPIC/python-components/config/PiotConfig.props
